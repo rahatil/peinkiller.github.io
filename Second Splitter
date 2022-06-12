@@ -1,0 +1,21 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+def convert_seconds(seconds):
+    hours=seconds//3600 #Using Floor Division
+    minutes=(seconds-hours*3600)//60 #Using recently calculated number of hours
+    rem_seconds=seconds-hours*3600-minutes*60
+    return hours,minutes,rem_seconds
+    
+print (convert_seconds(3800))
+
+print (3801//3600)
+print ((3801%3600)//60)
+print (3801%60)
+
+def new_convert(muhurto):
+    ghonta=muhurto//3600
+    minit=muhurto%3600//60 #Using Floor Division after using remainder getting operand
+    baki_muhurto=muhurto%60
+    return ghonta,minit,baki_muhurto
+
+print (new_convert(3801))
